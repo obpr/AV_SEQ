@@ -1,0 +1,496 @@
+#N canvas 121 113 949 560 10;
+#X obj 9 485 ctxfiles/license;
+#N canvas 67 226 824 371 grid 0;
+#X obj 834 -27 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 922 21 t b f f;
+#X obj 1062 54 * 18;
+#X obj 1010 86 t f f;
+#X obj 1042 108 * 18;
+#X obj 1017 132 zexy/pack f f f f $ 0;
+#X msg 878 199 obj \$2 \$4 cnv 15 15 15 \$5\$6-\$1-\$3-s \$5\$6-\$1-\$3-r
+empty 20 12 0 14 -262130 -66577 0;
+#X obj 878 247 iemguts/sendcanvas;
+#X obj 447 82 t b b b;
+#N canvas 554 231 742 300 random 0;
+#X obj 156 33 inlet;
+#X obj 176 102 random 8;
+#X obj 196 81 random 8;
+#X obj 156 55 t b b b b;
+#X obj 156 147 * -1;
+#X obj 156 192 t l l;
+#X obj 156 170 pack f f f \$0;
+#X obj 61 215 list 14 0 0 \$0;
+#X msg 61 266 \; \$4-\$3-\$2-r color 14;
+#X msg 188 216 \; \$4-\$3-\$2-r color \$1;
+#X obj 156 125 random 1e+08;
+#X connect 0 0 3 0;
+#X connect 1 0 6 1;
+#X connect 2 0 6 2;
+#X connect 3 0 10 0;
+#X connect 3 1 1 0;
+#X connect 3 2 2 0;
+#X connect 3 3 7 0;
+#X connect 4 0 6 0;
+#X connect 5 0 7 1;
+#X connect 5 1 9 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 10 0 4 0;
+#X restore 493 108 pd random;
+#X obj 922 63 cyclone/uzi 8 0;
+#X obj 834 -7 cyclone/uzi 8 0;
+#X obj 122 104 cnv 15 15 15 \$0-1-0-s \$0-1-0-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 140 104 cnv 15 15 15 \$0-2-0-s \$0-2-0-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 158 104 cnv 15 15 15 \$0-3-0-s \$0-3-0-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 176 104 cnv 15 15 15 \$0-4-0-s \$0-4-0-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 194 104 cnv 15 15 15 \$0-5-0-s \$0-5-0-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 212 104 cnv 15 15 15 \$0-6-0-s \$0-6-0-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 104 122 cnv 15 15 15 \$0-0-1-s \$0-0-1-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 122 122 cnv 15 15 15 \$0-1-1-s \$0-1-1-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 140 122 cnv 15 15 15 \$0-2-1-s \$0-2-1-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 158 122 cnv 15 15 15 \$0-3-1-s \$0-3-1-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 176 122 cnv 15 15 15 \$0-4-1-s \$0-4-1-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 194 122 cnv 15 15 15 \$0-5-1-s \$0-5-1-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 212 122 cnv 15 15 15 \$0-6-1-s \$0-6-1-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 230 122 cnv 15 15 15 \$0-7-1-s \$0-7-1-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 104 140 cnv 15 15 15 \$0-0-2-s \$0-0-2-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 122 140 cnv 15 15 15 \$0-1-2-s \$0-1-2-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 140 140 cnv 15 15 15 \$0-2-2-s \$0-2-2-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 158 140 cnv 15 15 15 \$0-3-2-s \$0-3-2-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 176 140 cnv 15 15 15 \$0-4-2-s \$0-4-2-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 194 140 cnv 15 15 15 \$0-5-2-s \$0-5-2-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 212 140 cnv 15 15 15 \$0-6-2-s \$0-6-2-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 230 140 cnv 15 15 15 \$0-7-2-s \$0-7-2-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 104 158 cnv 15 15 15 \$0-0-3-s \$0-0-3-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 122 158 cnv 15 15 15 \$0-1-3-s \$0-1-3-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 140 158 cnv 15 15 15 \$0-2-3-s \$0-2-3-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 158 158 cnv 15 15 15 \$0-3-3-s \$0-3-3-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 176 158 cnv 15 15 15 \$0-4-3-s \$0-4-3-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 194 158 cnv 15 15 15 \$0-5-3-s \$0-5-3-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 212 158 cnv 15 15 15 \$0-6-3-s \$0-6-3-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 230 158 cnv 15 15 15 \$0-7-3-s \$0-7-3-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 104 176 cnv 15 15 15 \$0-0-4-s \$0-0-4-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 122 176 cnv 15 15 15 \$0-1-4-s \$0-1-4-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 140 176 cnv 15 15 15 \$0-2-4-s \$0-2-4-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 158 176 cnv 15 15 15 \$0-3-4-s \$0-3-4-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 176 176 cnv 15 15 15 \$0-4-4-s \$0-4-4-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 194 176 cnv 15 15 15 \$0-5-4-s \$0-5-4-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 212 176 cnv 15 15 15 \$0-6-4-s \$0-6-4-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 230 176 cnv 15 15 15 \$0-7-4-s \$0-7-4-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 104 194 cnv 15 15 15 \$0-0-5-s \$0-0-5-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 122 194 cnv 15 15 15 \$0-1-5-s \$0-1-5-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 140 194 cnv 15 15 15 \$0-2-5-s \$0-2-5-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 158 194 cnv 15 15 15 \$0-3-5-s \$0-3-5-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 176 194 cnv 15 15 15 \$0-4-5-s \$0-4-5-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 194 194 cnv 15 15 15 \$0-5-5-s \$0-5-5-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 212 194 cnv 15 15 15 \$0-6-5-s \$0-6-5-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 230 194 cnv 15 15 15 \$0-7-5-s \$0-7-5-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 104 212 cnv 15 15 15 \$0-0-6-s \$0-0-6-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 122 212 cnv 15 15 15 \$0-1-6-s \$0-1-6-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 140 212 cnv 15 15 15 \$0-2-6-s \$0-2-6-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 158 212 cnv 15 15 15 \$0-3-6-s \$0-3-6-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 176 212 cnv 15 15 15 \$0-4-6-s \$0-4-6-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 194 212 cnv 15 15 15 \$0-5-6-s \$0-5-6-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 212 212 cnv 15 15 15 \$0-6-6-s \$0-6-6-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 230 212 cnv 15 15 15 \$0-7-6-s \$0-7-6-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 122 230 cnv 15 15 15 \$0-1-7-s \$0-1-7-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 140 230 cnv 15 15 15 \$0-2-7-s \$0-2-7-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 158 230 cnv 15 15 15 \$0-3-7-s \$0-3-7-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 176 230 cnv 15 15 15 \$0-4-7-s \$0-4-7-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 194 230 cnv 15 15 15 \$0-5-7-s \$0-5-7-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 212 230 cnv 15 15 15 \$0-6-7-s \$0-6-7-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 230 230 cnv 15 15 15 \$0-7-7-s \$0-7-7-r empty 20 12 0 14 -260818
+-66577 0;
+#X obj 230 104 tgl 15 1 \$0-on \$0-7-0-r empty 17 7 0 10 -260818 -1
+-1 1 1;
+#N canvas 289 169 742 300 random 0;
+#X obj 156 33 inlet;
+#X obj 176 102 random 8;
+#X obj 196 81 random 8;
+#X obj 156 55 t b b b b;
+#X obj 156 147 * -1;
+#X obj 156 192 t l l;
+#X obj 156 170 pack f f f \$0;
+#X obj 61 215 list 14 0 0 \$0;
+#X msg 61 266 \; \$4-\$3-\$2-r color 14;
+#X msg 188 216 \; \$4-\$3-\$2-r color \$1;
+#X obj 156 125 random 1e+08;
+#X connect 0 0 3 0;
+#X connect 1 0 6 1;
+#X connect 2 0 6 2;
+#X connect 3 0 10 0;
+#X connect 3 1 1 0;
+#X connect 3 2 2 0;
+#X connect 3 3 7 0;
+#X connect 4 0 6 0;
+#X connect 5 0 7 1;
+#X connect 5 1 9 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 10 0 4 0;
+#X restore 470 131 pd random;
+#N canvas 292 165 742 300 random 0;
+#X obj 156 33 inlet;
+#X obj 176 102 random 8;
+#X obj 196 81 random 8;
+#X obj 156 55 t b b b b;
+#X obj 156 147 * -1;
+#X obj 156 192 t l l;
+#X obj 156 170 pack f f f \$0;
+#X obj 61 215 list 14 0 0 \$0;
+#X msg 61 266 \; \$4-\$3-\$2-r color 14;
+#X msg 188 216 \; \$4-\$3-\$2-r color \$1;
+#X obj 156 125 random 1e+08;
+#X connect 0 0 3 0;
+#X connect 1 0 6 1;
+#X connect 2 0 6 2;
+#X connect 3 0 10 0;
+#X connect 3 1 1 0;
+#X connect 3 2 2 0;
+#X connect 3 3 7 0;
+#X connect 4 0 6 0;
+#X connect 5 0 7 1;
+#X connect 5 1 9 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 10 0 4 0;
+#X restore 447 161 pd random;
+#X obj 447 60 metro 170;
+#X obj 495 28 receive \$0-on;
+#X obj 104 104 cnv 15 15 15 \$0-0-0-s \$0-0-0-r empty 30 50 0 34 -260818
+-13330 0;
+#X obj 104 230 cnv 15 15 15 \$0-0-7-s \$0-0-7-r control -2 -57 0 35
+-260818 -66577 0;
+#X msg 517 302 \; \$4-\$3-\$2-r color 14;
+#X obj 313 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 313 178 cyclone/uzi 8 0;
+#X obj 415 224 cyclone/uzi 8 0;
+#X obj 517 248 t b f;
+#X obj 517 278 pack 14 f f \$0;
+#X obj 415 202 t b f;
+#X text 343 154 reset;
+#X obj 572 65 sel 0;
+#X obj 430 14 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 0 0 11 0;
+#X connect 1 0 10 0;
+#X connect 1 1 5 2;
+#X connect 1 2 2 0;
+#X connect 2 0 5 3;
+#X connect 3 0 5 0;
+#X connect 3 1 4 0;
+#X connect 4 0 5 1;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 8 0 75 0;
+#X connect 8 1 74 0;
+#X connect 8 2 9 0;
+#X connect 10 2 3 0;
+#X connect 11 2 1 0;
+#X connect 76 0 8 0;
+#X connect 77 0 76 0;
+#X connect 77 0 88 0;
+#X connect 81 0 82 0;
+#X connect 82 2 86 0;
+#X connect 83 2 84 0;
+#X connect 84 0 85 0;
+#X connect 84 1 85 1;
+#X connect 85 0 80 0;
+#X connect 86 0 83 0;
+#X connect 86 1 85 2;
+#X connect 88 0 82 0;
+#X connect 89 0 76 0;
+#X connect 89 0 88 0;
+#X coords 0 -1 1 1 149 149 2 100 100;
+#X restore 9 5 pd grid;
+#X obj 592 27 context :d 1 :x = 3 2 1 :ID 1;
+#X obj 667 27 context :c 12 :d 1 :x = 4 3 :ID 2;
+#X obj 740 27 context :Y -1 :c 5 :d 1 :x = 5 2 :y = 2 1 :ID 3;
+#X text 7 163 [control] is an interface between Context and the Novation
+Launchpad Mk2. It lets you control a Context network using the Launchpad
+MIDI hardware \, greatly increasing the speed and efficiency of simple
+operations (not to mention the fun). [control] is designed for live
+performance and improvisation \, but can also be useful for network
+composition. With [control] \, you can:, f 36;
+#X text 403 31 Here are some Contexts which will be linked to [control]
+, f 22;
+#X text 18 329 --start and stop Contexts \; --record into Context \;
+--edit toggle arrays \; --edit toggle float arrays \; --send custom
+commands.;
+#X text 5 406 [control] is fully documented in the Context manual.
+This helpfile serves as a quick-reference and start guide., f 36;
+#X obj 515 318 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 624 372 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 598 317 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 582 317 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 564 317 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 742 317 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#N canvas 67 89 450 160 (subpatch) 0;
+#X text 16 16 [control] links with all the Contexts in one patch. It
+doesn't make sense to have more than one instance of [control] open
+in a single patch \, but having several Context patches open each with
+their own [control] can be very useful. Only one instance of [control]
+can be actively communicating with the Launchpad at on time. To select
+which one is active \, use the "on" button \, or press the up and down
+(or left and right) buttons on the Launchpad together.;
+#X obj 384 135 outlet;
+#X restore 739 224 on-off;
+#N canvas 319 150 450 241 (subpatch) 0;
+#X obj 384 212 outlet;
+#X text 14 21 Mode 1 gives you a bird's-eye-view of all of the Contexts
+open in the patch. In mode 1 \, each Launchpad cell corresponds to
+one Context \, matching its position and colour. Clicking on a coloured
+cell starts that Context \, or performs some other function \, depending
+on the Function Selectors.;
+#X text 14 114 If the Function Selector is set to '-send 2' or '-send
+3' \, clicking on a cell in mode 1 will forward it to mode 2 or mode
+3;
+#X text 13 165 You can also use mode 1 to record data into a Context
+by tapping on the cell. The Function Selector must be set to :r for
+this to work.;
+#X obj 74 217 else/openfile helpfiles/links/control_mode_1.html -h
+see Context Manual entry on mode 1;
+#X restore 515 198 mode-1;
+#N canvas 67 99 450 418 (subpatch) 0;
+#X obj 378 238 outlet;
+#X text 15 13 Mode 2 lets you edit the toggles of a select group of
+Contexts. The group selected for editing is defined using the "-send
+2" Function in mode 1 In mode 2 \, each row of cells corresponds to
+the toggle array from a specific Context. You can turn them on and
+off by clicking on the cells \, and scroll using the Position Selectors
+if need be.;
+#X text 15 104 By default \, mode 2 lets you edit the x-axis toggles.
+To switch to the y-axis \, double click the mode 2 selector button
+("User 2").;
+#X text 14 158 In Mode 2 \, the Function Selector is used to start
+the given Context. It can also be used to send other commands \, if
+you use the Function Selector in the [control] abstraction \, rather
+than on the Launcpad itself. This is the only instance where the behaviour
+of the patch differs from the behaviour of the hardware.;
+#X text 15 248 A secondary feature of Mode 2 lets you start Context
+at a specific point in its cycle. To do this \, you need to hold down
+the the "User 1" (Mode 2) button and press one of the cells Context
+will now start at the point corresponding to that cell. You can enter
+this mode permanently by using the :tx 1 command. Holding down the
+Mode 2 button now switches back to the original mode where pressing
+cells affects the toggles.;
+#X obj 75 372 else/openfile helpfiles/links/control_mode_2.html -h
+see Context Manual entry on mode 2;
+#X restore 544 223 mode-2;
+#N canvas 67 92 450 210 (subpatch) 0;
+#X obj 384 181 outlet;
+#X text 11 14 Mode 3 lets you edit the toggle floats of a single Context.
+The Context selected for editing is defined by the "-send 3" Function
+Command in mode 1 . Alternatively \, the last Context clicked on in
+mode 2 will be selected for editing in mode 3;
+#X text 11 82 In mode 3 \, the x-axis corresponds to a given toggle
+from the selected Context \, while the y-axis corresponds to its toggle
+float value. You can change the value of any toggle by clicking on
+an empty cell \, or turn a toggle off by clicking on a lit cell. By
+default. mode 3 lets you edit the x-axis toggles. You can flip to y-axis
+by double clicking on the mode 3 selector button ("Mixer").;
+#X obj 74 187 else/openfile helpfiles/links/control_mode_3.html -h
+see Context Manual entry on mode 3;
+#X restore 574 247 mode-3;
+#N canvas 67 99 565 344 (subpatch) 0;
+#X text 9 16 Mode 4 \, Mixer mode \, doesn't relate to Context \, but
+to [slide] and [slide2]. It enables you to control the sliders in a
+custom mixer abstraction using the Launchpad. The abstraction must
+have the [pgrid] object placed in it \, along with [slide] and/or [slide2].
+An example patch is included in this file to help you. You can use
+[control] to control multiple such patches by double clicking on the
+"Mixer" button.;
+#X text 12 135 To enter Mover mode \, simply click on the [pgrid] "bang"
+open in the [slide]/[slide2] abstraction (an instance of [control]
+must be present in the same patch in order for this to work). In Mixer
+mode \, you will see as many vertical virtual faders as there are [slide]/[slide2]
+objects in the abstraction. Clicking on a new cell moves the given
+slider up or down in a certain time perdiod. The time perdiod is defined
+by the Function Selector \, and is longer the higher up you go (starting
+at one millisecond \, ending at ~30 seconds). Clicking on the selected
+Function Selector again halts the motion.;
+#X obj 413 40 slide m m \$0 0 100;
+#X obj 413 165 pgrid;
+#X obj 413 212 psave;
+#X obj 83 294 else/openfile helpfiles/links/control_mode_4.html -h
+see Context Manual entry on mode 4;
+#X restore 599 275 mode-4;
+#N canvas 67 89 450 161 (subpatch) 0;
+#X obj 381 131 outlet;
+#X text 9 15 The position selectors are used to scroll if the grid
+is not large enough to represent the array. Their usage is generally
+very intuitive. If a Position Selector is not lit \, it means that
+it will have no effect.;
+#X text 9 78 You can also use the Position Selectors to jump between
+different instances of [control] in different patches. To do this \,
+click on both the up and down (or left and right) buttons together.
+;
+#X restore 357 231 position-selectors;
+#N canvas 299 154 450 390 (subpatch) 0;
+#X obj 377 328 outlet;
+#X text 13 14 The function selectors work differently depending on
+the mode. In mode 1 \, they are used to set the message that will be
+sent to a Context by clicking on it. In mode 2 \, they are used to
+send a start (or other) message to Context. In mode 3 \, they have
+the same assignments as in mode 1 \, but send to the selected Context
+immediately when pressed. In mode 4 they determine the time duration
+for the slider movement.;
+#X text 14 117 Function selectors each have a default message \, which
+is visible in the [control] patch. You can also edit the message by
+typing into the symbol atom. The symbol $ will be replaced with the
+\$0 value for the parent patch \, while % will be replaced with the
+ID number of the Context which is set to receive the message.;
+#X text 13 207 In Mode 2 \, the Function selector holds a second Function
+message \, which is used in :tx mode. By default \, this is the message
+":s p" which is used to start Context at a specific location \, but
+it could be replaced with anything. This message can take one variable
+\, specified by "%d". The variable is substitued for a number according
+to which cell triggers the :tx message.;
+#X restore 774 336 function-selectors;
+#N canvas 67 87 450 105 (subpatch) 0;
+#X text 16 6 With quantize turned on (:qu 1) \, any :s or :ss command
+send by [control] will snap to either the previous or the next beat.
+In order to achieve this \, [control] must be given the beat. This
+is dome from its inlet in the top-left corner.;
+#X restore 710 494 quantize;
+#N canvas 571 308 514 399 arguments 0;
+#X text 22 17 [control] has a few commands which can be sent to it
+through creation arguments. It also uses these commands to save custom
+Function Selector messages (this happens automatically).;
+#X text 43 86 :qu -- quantize on or off \; :gui 1 -- turn the grid
+section of the GUI off \; :gui -1 turn the GUI completely off (-1)
+\; :sa 0 -- turn the automatic saving off \; :ac 1 --turn active window
+sensing on \; :1f0 -- assign a message to the first function selector
+in mode 1 \; ... \; :1f7 -- assign a message to the eighth function
+selector in mode 1 \; :2f0 -- assign a message to the first function
+selector in mode 2 \; ... \; :2f7 -- assign a message to the eighth
+function selector in mode 2 \; :3f0 -- assign a message to the first
+function selector in mode 3 \; ... \; :3f7 -- assign a message to the
+eighth function selector in mode 3 \; :4f0 -- assign a message to the
+first function selector in mode 4 \; ... \; :4f7 -- assign a message
+to the eighth function selector in mode 4 \; :tx -- switch toggle mode
+and start mode in Mode 2 \;, f 68;
+#X restore 498 494 creation arguments;
+#N canvas 361 148 450 323 keys 0;
+#X text 40 22 Each cell has an alternate function which can be activated
+with the keyboard's Shift key.;
+#X text 64 62 --The control row along the top and the right (ie. the
+directors \, function selectors and mode selectors) will select an
+entire row or column \; --If you press a normal cell while the Shift
+key is down \, it will enter a queue buffer. All cells which you press
+will be stored and sent simmultaneously when you release the Shift
+key., f 54;
+#X text 41 172 Notice that these funcions work irrespective of which
+mode you are in \, so the results will differ from mode to mode. In
+mode 1 \, the shift functions will help you start multiple Contexts
+at once. In mode 2 \, it will help you alter multiple toggles at once
+\, etc.;
+#X text 40 244 In mode 3 \, holding down the "c" key lets you select
+toggle-float connections ("c-numbers") instead of regular toggle floats.
+;
+#X restore 628 494 shift keys;
+#X obj 547 317 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#N canvas 67 89 450 209 (subpatch) 0;
+#X obj 382 171 outlet;
+#X text 36 17 Mode 0 lets you jump to a difference instance of [control]
+and a different patch. This is only useful if you have more than one
+instance of [control] open at once. In mode 0 \, each cell corresponds
+to one instance of [control]. The colour is that of the Context in
+the top-left hand corner of that [control]'s patch. Clicking on that
+cell will jump to the given patch. Mode 0 is the same in every instance
+of [control] that is open \, so it doesn't make any difference where
+you summon it from.;
+#X obj 69 171 else/openfile helpfiles/links/control_mode_0.html -h
+see Context Manual entry on mode 0;
+#X restore 475 173 mode-0;
+#N canvas 67 89 450 135 (subpatch) 0;
+#X text 41 29 [control] has a small properties menu. You can access
+it by right clicking and selecting "properties". There you will be
+able to select most of the same options as listed in "creation arguments"
+\, and define the mode-2 ID list.;
+#X restore 780 494 properties;
+#X obj 476 315 control;
+#X text 378 106 Note: It only makes sense to use [control] if you have
+a Novation Launchpad Mk2 (https://global.novationmusic.com/launch/launchpad).
+However \, the [control] patch contains a fully functional mockup of
+the controller \, so this help-file will work still with no MIDI hardware.
+, f 72;
+#X obj 550 526 else/openfile helpfiles/links/control.html -h see the
+Context Manual entry on [control];
+#X obj 408 11 helpfiles/docfiles/help-display \$0;
+#X connect 15 0 14 0;
+#X connect 16 0 13 0;
+#X connect 17 0 12 0;
+#X connect 18 0 11 0;
+#X connect 20 0 9 0;
+#X connect 21 0 10 0;
+#X connect 26 0 25 0;

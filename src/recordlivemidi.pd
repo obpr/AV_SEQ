@@ -1,0 +1,67 @@
+#N canvas 646 121 390 620 12;
+#X msg 85 67 record;
+#X msg 156 -19 stop record;
+#X msg 156 9 write test.mid;
+#X floatatom 106 257 3 0 0 0 - - -;
+#X obj -67 202 cyclone/seq seq.mid;
+#X obj 63 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj -84 20 notein;
+#X obj -83 52 pack;
+#X floatatom -94 -5 5 0 0 0 - - -;
+#X floatatom -95 -32 5 0 0 0 - - -;
+#X obj -84 112 cyclone/midiformat;
+#X obj 65 -4 sel;
+#X obj 90 34 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 66 -33 5 0 0 0 - - -;
+#X obj 104 106 tgl 25 0 empty empty REC 3 12 0 10 -262144 -1 -1 0 1
+;
+#X obj 105 308 s recordlivemidiloop;
+#X obj 105 229 bng 25 250 50 0 empty empty empty 17 7 0 10 -1 -262144
+-1;
+#X obj 104 133 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -54 -63 + 1;
+#X obj 76 203 spigot-toggle_violet;
+#X obj 104 175 tgl 25 0 empty empty LOOP 6 12 0 6 -262144 -1 -1 1 1
+;
+#X obj 175 133 r lo;
+#X msg 174 213 play seq.mid;
+#X obj 24 159 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 104 202 bng 25 250 50 0 empty empty START 3 12 0 6 -262144 -1
+-1;
+#X obj -93 -66 f;
+#X floatatom 103 158 3 0 0 0 - - -;
+#X connect 0 0 4 0;
+#X connect 1 0 4 0;
+#X connect 2 0 4 0;
+#X connect 3 0 15 0;
+#X connect 3 0 16 0;
+#X connect 4 0 3 0;
+#X connect 4 1 19 0;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X connect 6 1 7 1;
+#X connect 7 0 10 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 1;
+#X connect 9 0 8 0;
+#X connect 10 0 4 0;
+#X connect 11 0 5 0;
+#X connect 11 1 12 0;
+#X connect 12 0 0 0;
+#X connect 13 0 11 0;
+#X connect 14 0 13 0;
+#X connect 17 0 25 0;
+#X connect 18 0 25 1;
+#X connect 19 0 24 0;
+#X connect 20 0 19 1;
+#X connect 21 0 20 0;
+#X connect 22 0 4 0;
+#X connect 24 0 4 0;
+#X connect 25 0 18 0;
+#X connect 25 0 9 0;
+#X connect 26 0 9 0;
+#X coords 0 -1 1 1 35 180 1 100 100;

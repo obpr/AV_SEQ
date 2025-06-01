@@ -1,0 +1,22 @@
+#N canvas 385 141 511 567 10;
+#X obj 287 27 ctxfiles/license;
+#X obj 28 31 cnv 15 252 52 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#X obj 23 26 cnv 15 252 52 empty empty empty 20 12 0 14 -1 -66577 0
+;
+#X obj 24 27 cnv 15 250 50 empty empty autocreate 35 23 2 40 -87525
+-262144 0;
+#X text 41 100 [autocreate] is a simple object which lets you dynamically
+create an object by clicking on the screen for rapid-fire patching.
+You have to hold down the shift and the control/command keys for this to work
+\, to protect against accidental triggering. Its arguments are the
+object (and arguments) you want to be created. [autocreate] is designed
+for creating Context objects \, but could just as well be used to create
+anything.;
+#X text 46 287 Hold down the shift and control/command keys and click anywhere
+on this canvas to see [autocreate] in action.;
+#X text 40 209 The symbol '%' will be replaced by a number sequence
+\, starting with 0;
+#X obj 151 239 autocreate context :c 6 :x 2 :il 2;
+#X obj 301 534 else/openfile preset-help.pd -h see also: [preset];
+#X obj 9 6 helpfiles/docfiles/help-display \$0;

@@ -1,0 +1,71 @@
+#N canvas 293 193 701 567 10;
+#X declare -path ../;
+#X obj 100 116 cnv 15 130 428 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#X obj 90 106 cnv 15 130 428 empty empty empty 20 12 0 14 -1 -66577
+0;
+#X obj 91 107 cnv 15 128 426 empty empty empty 20 12 0 14 -170900 -66577
+0;
+#X obj 280 116 cnv 15 130 428 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#X obj 270 106 cnv 15 130 428 empty empty empty 20 12 0 14 -1 -66577
+0;
+#X obj 271 107 cnv 15 128 426 empty empty empty 20 12 0 14 -170900
+-66577 0;
+#X obj 255 43 cnv 15 199 38 empty empty empty 18 16 2 24 -99865 -1
+0;
+#X obj 251 39 cnv 15 199 38 empty empty empty 18 16 2 24 -1 -1 0;
+#X obj 522 32 mtof;
+#X obj 522 76 dac~;
+#X obj 522 9 receive pos-;
+#X obj 252 40 cnv 15 197 36 empty empty positional mode 10 16 0 20
+-4032 -1 0;
+#X obj 606 124 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 606 144 \; pd dsp \$1;
+#X msg 105 176 \; pos :k \$1;
+#X floatatom 105 152 5 0 0 0 - - -, f 5;
+#X text 102 220 Alter the timing of the whole loop here (see 'calculation'
+in the manual), f 15;
+#X obj 286 128 context :X 8 :a ' 72 ' :d 0.5 :i 0 0 0 0 0 0 0 2.5 :n
+' pos ' :x = 8 1 :K 1 :Z 14 :ID 1;
+#X obj 286 242 context :X 8 :a ' 74 ' :c 3 :d 0.5 :i 0 0 0 0 0 0 0
+3.5 :n ' pos ' :x = 8 1 :B 0.125 :C 5 :E 2 :K 1 :Z 13 :ID 2;
+#X obj 286 353 context :X 8 :a ' 77 ' :c 3 :d 0.5 :i 0 0 0 0 0 0 0
+4.5 :n ' pos ' :x = 8 1 :B 0.125 :C 5 :E 2 :K 1 :Z 14 :ID 3;
+#X obj 286 465 context :X 8 :a ' 79 ' :d 0.5 :i 0 0 0 0 0 0 0 1.5 :n
+' pos ' :x = 8 1 :B 0.125 :C 5 :E 2 :K 1 :Z 14 :ID 4;
+#X obj 522 54 docfiles/glock~ 1;
+#X floatatom 107 337 5 0 0 0 - - -, f 5;
+#X msg 107 356 \; pos :B \$1;
+#X text 101 392 Set the resolution here (ie. the gaps at which the
+timings jump). In this example \, only numbers less than 0.5 make sense.
+, f 16;
+#X obj 450 116 cnv 15 150 428 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#X obj 440 106 cnv 15 150 428 empty empty empty 20 12 0 14 -1 -66577
+0;
+#X obj 441 107 cnv 15 148 426 empty empty empty 20 12 0 14 -170900
+-66577 0;
+#X msg 606 192 \; context stop;
+#X text 448 375 Moving a context horizontally \, or lowering c4 \, adds
+time to the whole loop., f 19;
+#X text 449 446 Note that you have to be in edit mode (ctrl+e) to move
+a Context)., f 19;
+#X obj 22 14 ctxfiles/license;
+#X text 448 113 c1-c4 form a loop. Since positional mode is on. if
+you move the two white contexts up or down \, it will change the timing
+of the Contexts directly above and below. in 1/8 second intervals.
+But notice that the cycle time for the complete loop remains constant
+at 2 seconds \, even while the individual timings change., f 19;
+#X obj 22 73 declare -path ../;
+#X obj 297 14 docfiles/help-display \$0;
+#X obj 236 85 else/openfile links/positional_mode.html -h see Context
+Manual entry on positional mode;
+#X connect 8 0 21 0;
+#X connect 10 0 8 0;
+#X connect 12 0 13 0;
+#X connect 15 0 14 0;
+#X connect 21 0 9 0;
+#X connect 21 0 9 1;
+#X connect 22 0 23 0;

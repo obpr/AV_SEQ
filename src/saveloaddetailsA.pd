@@ -1,0 +1,189 @@
+#N canvas 212 140 1468 888 12;
+#X obj 0 96;
+#X obj 20 104 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 215 193 tgl 18 0 \$0-visbngrA empty + -2 8 0 38 -260097 -1 -1
+0 1;
+#X obj 649 135 savestat$A;
+#X obj 649 168 savestateTA;
+#X obj 649 190 savestateITA;
+#X obj 649 212 savestateprogA;
+#X obj 649 235 savestate+A;
+#X obj 647 93 savestate_selector_A;
+#X obj 151 63 r saveselA;
+#X obj 267 64 r loadselA;
+#N canvas 50 60 475 205 \$0-rev~ 0;
+#N canvas 11 375 866 485 mask 0;
+#X obj 100 100 cnv 15 459 189 empty empty empty 2 2 0 14 -262144 -66577
+0;
+#X obj 218 179 nbx 4 12 0 100 0 0 \$0-hf-damping \$0-hf-dampingr %
+41 7 2 10 -262144 -1 -1 0 256;
+#X obj 112 179 hsl 100 12 0 100 0 0 \$0-hfdgui \$0-hfdguir HF-Damping
+-2 -6 2 10 -262144 -1 -1 0 1;
+#X msg 46 175 set \$1;
+#X obj 218 154 nbx 5 12 0 20000 0 0 \$0-lop \$0-lopr hz. 50 7 2 10
+-262144 -1 -1 0 256;
+#X obj 112 154 hsl 100 12 0 1 0 0 \$0-lopgui \$0-lopguir Lop-Frequency
+-2 -6 2 10 -262144 -1 -1 0 1;
+#N canvas 439 215 450 300 map 0;
+#X obj 105 33 inlet;
+#X msg 105 180 set \$1;
+#X obj 105 205 outlet;
+#X obj 200 207 outlet;
+#X obj 200 41 inlet;
+#X obj 105 92 sqrt;
+#X obj 104 66 / 15000;
+#X obj 200 102 pow 2;
+#X obj 200 128 * 15000;
+#X connect 0 0 6 0;
+#X connect 1 0 2 0;
+#X connect 4 0 7 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 8 0 3 0;
+#X restore 45 151 pd map;
+#X obj 218 128 nbx 4 12 0 100 0 0 \$0-feedback \$0-feedbackr % 41 7
+2 10 -262144 -1 -1 0 256;
+#X obj 112 128 hsl 100 12 0 100 0 0 \$0-fbgui \$0-fbuir Feedback -2
+-6 2 10 -262144 -1 -1 0 1;
+#X msg 45 125 set \$1;
+#X obj 378 129 cnv 15 152 102 empty empty empty 20 12 0 14 -128992
+-66577 0;
+#N canvas 3 54 450 300 mask 0;
+#X obj 100 100 cnv 15 150 100 empty empty empty 20 12 0 14 -262144
+-66577 0;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array \$0-tail 16 float 3;
+#A 0 10 11.6356 13.4567 16.7345 20.1862 25.7417 31.4693 38.2944 46.6838
+55.4567 65.1755 76.8243 88.5623 101.278 115.397 130.502;
+#X coords 0 200 16 0 150 100 1 0 0;
+#X restore 100 100 graph;
+#X coords 0 -1 1 1 150 100 1 100 100;
+#X restore 379 130 pd mask;
+#X obj 532 126 cnv 10 10 10 empty empty 200 0 5 2 10 -262144 -1 0;
+#X obj 532 221 cnv 10 10 10 empty empty 0ms 0 5 2 10 -262144 -1 0;
+#X obj 379 113 cnv 10 100 15 empty empty Tail 0 5 2 10 -262144 -1 0
+;
+#X obj 342 238 nbx 4 12 -1e+24 1e+24 0 0 \$0-center \$0-centerr Center
+41 7 2 10 -262144 -1 -1 0 256;
+#X obj 487 238 nbx 4 12 -1e+24 1e+24 0 0 \$0-slope \$0-sloper Slope
+41 7 2 10 -262144 -1 -1 0 256;
+#X obj 416 238 nbx 4 12 -1e+24 1e+24 0 0 \$0-curve \$0-curver Curve
+41 7 2 10 -262144 -1 -1 0 256;
+#X obj 285 129 cnv 15 72 102 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#N canvas 3 52 450 300 mask 0;
+#X obj 100 100 cnv 15 70 100 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array \$0-early 5 float 3;
+#A 0 0 1.42763 3.23873 5.2345 1.6;
+#X coords 0 40 5 0 70 100 1 0 0;
+#X restore 100 100 graph;
+#X coords 0 -1 1 1 70 100 1 100 100;
+#X restore 286 130 pd mask;
+#X obj 359 222 cnv 10 10 10 empty empty 0ms 0 5 2 10 -262144 -1 0;
+#X obj 286 113 cnv 10 60 15 empty empty Early 0 5 2 10 -262144 -1 0
+;
+#X obj 182 109 cnv 10 10 10 empty empty rev~ 0 5 2 17 -262144 -162280
+0;
+#X obj 359 124 cnv 10 10 10 empty empty 40 0 5 2 10 -262144 -1 0;
+#X obj 397 271 hradio 11 1 0 8 \$0-presetrd \$0-presetrdr Preset:Reflections
+0 -8 2 10 -262144 -1 -1 4;
+#X obj 217 256 nbx 4 12 0 200 0 0 \$0-width \$0-widthr % 41 7 2 10
+-262144 -1 -1 0 256;
+#X obj 111 256 hsl 100 12 0 100 0 0 \$0-wgui \$0-wguir Width -2 -6
+2 10 -262144 -1 -1 0 1;
+#X msg 53 253 set \$1;
+#X obj 499 270 nbx 4 12 0 100 0 0 \$0-drywet \$0-drywetr % 41 7 2 10
+-262144 -1 -1 1 256;
+#X obj 499 258 cnv 10 10 10 empty empty Dry/Wet 0 5 2 10 -262144 -1
+0;
+#X obj 217 230 nbx 4 12 0 100 0 0 \$0-lf-damping \$0-lf-dampingr %
+41 7 2 10 -262144 -1 -1 0 256;
+#X obj 111 230 hsl 100 12 0 100 0 0 \$0-lfdgui \$0-lfdguir LF-Damping
+-2 -6 2 10 -262144 -1 -1 0 1;
+#X obj 217 205 nbx 5 12 0 20000 0 0 \$0-hip \$0-hipr hz. 50 7 2 10
+-262144 -1 -1 0 256;
+#X obj 111 205 hsl 100 12 0 1 0 0 \$0-hipgui \$0-hipguir Hip-Frequency
+-2 -6 2 10 -262144 -1 -1 0 1;
+#X msg 47 230 set \$1;
+#N canvas 439 215 450 300 map 0;
+#X obj 105 33 inlet;
+#X msg 105 180 set \$1;
+#X obj 105 205 outlet;
+#X obj 200 207 outlet;
+#X obj 200 41 inlet;
+#X obj 105 92 sqrt;
+#X obj 104 66 / 15000;
+#X obj 200 102 pow 2;
+#X obj 200 128 * 15000;
+#X connect 0 0 6 0;
+#X connect 1 0 2 0;
+#X connect 4 0 7 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 8 0 3 0;
+#X restore 46 202 pd map;
+#X obj 565 281 r dry/wetA;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 1;
+#X connect 6 0 5 0;
+#X connect 6 1 4 0;
+#X connect 7 0 9 0;
+#X connect 8 0 7 0;
+#X connect 9 0 8 0;
+#X connect 25 0 27 0;
+#X connect 26 0 25 0;
+#X connect 27 0 26 0;
+#X connect 30 0 34 0;
+#X connect 31 0 30 0;
+#X connect 32 0 35 0;
+#X connect 33 0 32 0;
+#X connect 33 0 35 1;
+#X connect 34 0 31 0;
+#X connect 35 0 33 0;
+#X connect 35 1 32 0;
+#X connect 36 0 28 0;
+#X coords 0 -1 1 1 460 190 2 100 100;
+#X restore 8 9 pd mask;
+#X coords 0 -1 1 1 85 60 2 100 100;
+#X restore 87 175 pd \$0-rev~;
+#X msg 203 343 color 0 0;
+#X msg 287 343 color 10 10;
+#X obj 205 288 t b;
+#X obj 285 318 del 250;
+#X msg 169 394 relocate 475x205+1+1 1x1+50+60 \, vis 1;
+#X obj 205 266 r \$0-visbngA;
+#X obj 223 371 s \$0-visbngrA;
+#X obj 37 37;
+#X obj 161 118 tstst;
+#X obj 169 416 s pd-\$0-AA;
+#X obj 105 103 cnv 15 22 22 \$0-visbngA empty AA 20 12 0 14 -13381
+-204786 0;
+#X connect 8 0 3 0;
+#X connect 8 0 4 0;
+#X connect 8 0 6 0;
+#X connect 8 0 7 0;
+#X connect 8 0 5 0;
+#X connect 8 1 3 1;
+#X connect 8 1 4 1;
+#X connect 8 1 6 1;
+#X connect 8 1 7 1;
+#X connect 8 1 5 1;
+#X connect 9 0 8 0;
+#X connect 10 0 8 1;
+#X connect 12 0 18 0;
+#X connect 13 0 18 0;
+#X connect 14 0 12 0;
+#X connect 14 0 15 0;
+#X connect 14 0 16 0;
+#X connect 15 0 13 0;
+#X connect 16 0 21 0;
+#X connect 17 0 14 0;
+#X coords 0 -1 1 1 33 33 1 100 100;

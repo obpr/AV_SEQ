@@ -1,0 +1,4 @@
+open avgranu_DAVW.pd
+choose vidéo and audio sample
+video P frame every frame ( done with quicktime player 7 for exemple)
+audio 88200 ( or change to 44 in the pach with the [44] button in the Pitch and Speed module (10)

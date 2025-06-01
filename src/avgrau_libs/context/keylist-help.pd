@@ -1,0 +1,79 @@
+#N canvas 354 135 415 598 10;
+#X obj 33 32 cnv 15 144 57 empty empty empty 21 18 2 32 -99865 -204800
+0;
+#X obj 27 26 cnv 15 144 57 empty empty empty 21 18 2 32 -1 -204800
+0;
+#X obj 28 27 cnv 15 142 55 empty empty empty 21 18 2 32 -204786 -204800
+0;
+#X obj 29 28 cnv 15 140 53 empty empty keylist 16 25 2 38 -206035 -204800
+0;
+#X obj 26 153 cnv 15 358 392 empty empty empty 20 12 0 14 -33289 -66577
+0;
+#X obj 27 154 cnv 15 356 390 empty empty empty 20 12 0 14 -162280 -66577
+0;
+#X obj 31 158 cnv 15 347 381 empty empty empty 20 12 0 14 -33289 -66577
+0;
+#X obj 32 159 cnv 15 345 379 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 65 183 context :H 12 :X 12 :Y 5 :Z 17 :ID 1 :ol 1 8 obj 187
+10 ../keylist x ** :x % 8 obj 187 41 ../keylist y ** :y % 8 obj 188
+74 ../keylist d ** :d %;
+#X text 217 200 <--;
+#N canvas 534 263 450 300 arguments 0;
+#X text 49 22 [keylist] has three four parts to its creation argument
+\, the first and third being mandatory.;
+#X text 57 60 1: a key from the keyboard \, ie. 'x'. Note that number
+keys and modifier keys (ie. Shift) won't work.;
+#X text 55 103 2: an optional flag ** \, which will make keylist send
+its command regardless of whether the mouse is hovering over Context
+or not.;
+#X text 53 153 3: Any Context command. See Manual section 8;
+#X text 52 180 4: A variable symbol '$' or '%'. '%' takes the keyboard
+input \, as in the example. '$' takes numeric input from the inlet
+of [keylist]. Notice \, however \, that the command doesn't sent until
+a number key is pressed \, so you will still need to press a number
+key if you plan on using the '$' variable.;
+#X restore 40 514 creation arguments;
+#X obj 196 30 ctxfiles/license;
+#X text 50 369 TO USE KEYLIST IN TO ALTER CONTEXT IN THIS EXAMPLE:
+;
+#X text 63 401 1: Press and hold the x key \; 3: Press a number key
+\; 4: Release the letter key and watch x-axis toggles \; 5: Repeat
+with the y and d keys;
+#N canvas 301 157 439 456 (subpatch) 0;
+#X text 33 20 Keylist sends its commands only when the key is released.
+This is to allow for double-digit number input. You can see this in
+th example if you press the keys 'd 1 0'. You will get ':d 10' when
+you releast the 'd' key.;
+#X text 41 369 If you want to cancel the message after you have already
+started typing \, you can press the Escape key.;
+#X text 33 96 By default \, [keylist] will only work if you have the
+mouse hovering over Context. This is to allow more than one Context
+to share the same key bindings--you can then send commands to a specific
+Context by holding the mouse over it and typing. You can test this
+below--hold the mouse over one Context and type "x 2" \, then hold
+it over the other and try the same thing. Notice \, however \, that
+the this setting is switched off in the example in the main window
+of this help patch \, so whatever you type here will affect that Context
+too. (To turn off mouse activation \, use the '**' creation flag (see
+[creation arguments].);
+#X obj 75 277 context :H 8 :c 6 :ID 2 :ol 1 7 obj 142 15 keylist x
+:x %;
+#X obj 213 277 context :H 12 :c 6 :z 10 :Z 13 :ID 3 :ol 1 7 obj 142
+15 keylist x :x %;
+#X restore 164 514 notes;
+#X text 246 171 [keylist] is an Overlay abstraction. There are three
+[keylist] obects in the Overlay here. Right click and 'open' to see
+them., f 20;
+#X text 64 292 This Context has keylist bindings for :x \, :y and :d.
+This means that you can set the x-axis toggles (:x) \, the y-axis toggles
+(:y) and the cycle time (:d) using the keyboard., f 45;
+#X text 30 97 [keylist] binds Context commands to keyboard input. This
+lets you control Context in custom ways by typing.;
+#X obj 19 5 helpfiles/docfiles/help-display \$0;
+#X obj 24 551 else/openfile helpfiles/links/keylist.html -h see Context
+Manual entry on [keylist];
+#X text 41 474 WARNING: [keylist] might not work properly on a Mac.
+;
+#X obj 41 488 else/openfile https://github.com/pure-data/pure-data/issues/213
+-h See PD bug report.;

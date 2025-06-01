@@ -1,0 +1,5 @@
+#N canvas 602 48 1297 878 10;
+#X obj 74 -24 avgranu_edit;
+#X obj 378 493 granuA;
+#X obj 367 486 cnv 5 70 28 empty empty LFO_&_GRN 3 14 0 12 -260097
+-66577 0;

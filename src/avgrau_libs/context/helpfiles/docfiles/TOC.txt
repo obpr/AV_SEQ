@@ -1,0 +1,74 @@
+README.txt;
+readme & setup;
+
+helpfiles/what_is_context.txt;
+what is Context?;
+
+-space;
+-space;
+
+helpfiles/examples/example_02.pd;
+example Context network;
+
+helpfiles/examples/example_01.pd;
+another example Context network;
+
+helpfiles/00_first_time_tutorial.pd;
+interactive tutorial;
+
+-space;
+-space;
+
+helpfiles/tips.txt;
+quick tips;
+
+helpfiles/GUI_interpretation.pd;
+how to read the GUI;
+
+helpfiles/GUI_manipulation.pd;
+how to use the GUI (resizing etc.);
+
+-space;
+-space;
+
+helpfiles/context_commands_all.pd;
+complete list of Context commands;
+
+helpfiles/context_commands_brief.pd;
+brief list of Context commands;
+
+context_manual.pdf;
+Context manual;
+
+-space;
+-space;
+
+helpfiles;
+more helpfiles (to accompany the manual);
+
+helpfiles/docfiles/other_objects.pd;
+other objects in the Context library;
+
+helpfiles/warnings.txt;
+bugs and warnings;
+
+-space;
+-space;
+
+http://contextsequencer.wordpress.com;
+Context website;
+
+https://www.facebook.com/groups/123031095094961/;
+facebook group;
+
+https://www.youtube.com/channel/UC_9u0n_ugUW7OjWrJRvhTjA?view_as=subscriber;
+video tutorial series (new uploads regularly);
+
+-space;
+-space;
+
+https://contextsequencer.wordpress.com/publications/;
+papers papers about Context;
+
+License.txt;
+license (GPL v3);

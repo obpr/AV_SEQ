@@ -1,0 +1,8 @@
+#N canvas 618 387 253 142 12;
+#N canvas 0 22 450 300 shisi 1;
+#X obj 32 45 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 33 22 miditocv;
+#X restore 99 59 pd shisi;
+#X obj 95 48 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;

@@ -1,0 +1,38 @@
+#N canvas 431 97 498 415 12;
+#X obj -96 490 tgl 23 0 empty empty empty 17 7 0 10 -1 -260097 -260097
+1 1;
+#X obj -98 549 f;
+#X obj -70 550 + 1;
+#X obj -98 520 metro 5;
+#X obj -149 628 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -169 580 mod;
+#X obj -163 606 sel;
+#X floatatom -138 581 5 0 0 0 - - -;
+#X obj -171 465 * 1;
+#X floatatom -132 436 5 0 0 0 - - -;
+#X floatatom -175 435 5 0 0 0 - - -;
+#X floatatom -171 493 5 0 0 0 - - -;
+#X msg -139 546 50;
+#X obj -170 632 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -113 462 r lo;
+#X obj -34 519 s snapshot;
+#X obj -171 656 s metroenvA;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 1 0 5 0;
+#X connect 2 0 1 1;
+#X connect 3 0 1 0;
+#X connect 3 0 15 0;
+#X connect 5 0 6 0;
+#X connect 6 0 13 0;
+#X connect 6 1 4 0;
+#X connect 7 0 5 1;
+#X connect 8 0 11 0;
+#X connect 9 0 8 1;
+#X connect 10 0 8 0;
+#X connect 12 0 7 0;
+#X connect 13 0 16 0;
+#X connect 14 0 12 0;
+#X connect 14 0 0 0;

@@ -1,0 +1,180 @@
+#N canvas 95 89 911 679 10;
+#X declare -path ../;
+#X obj -203 180 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -193 180 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -183 180 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -173 180 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -163 180 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -153 180 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -143 180 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -133 180 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -203 190 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -193 190 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -183 190 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -173 190 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -163 190 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -153 190 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -143 190 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -133 190 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -203 200 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -193 200 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -183 200 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -173 200 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -163 200 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -153 200 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -143 200 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -133 200 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -203 210 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -193 210 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -183 210 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -173 210 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -163 210 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -153 210 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -143 210 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -133 210 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -203 220 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -193 220 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -183 220 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -173 220 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -163 220 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 454 333 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 466 331 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 427 270 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 444 305 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 368 334 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 381 331 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 469 292 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 390 331 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 367 290 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 387 290 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 370 271 bng 8 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 367 266 context :X 9 :Y 6 :a ' message ' :d 1 :e 3 :f 2 :i 0
+0 0 0 0 0 0 1 1.5 :n ' ID-tag ' :x = 9 8 7 4 1 :y = 2 1 :Z 11 :ID 1
+;
+#X msg 230 132 cycle time;
+#X msg 432 119 ID number and tags;
+#X msg 157 171 cursor;
+#X msg 647 147 message window;
+#X msg 370 365 pattern toggles, f 7;
+#X msg 639 278 burst toggles;
+#X msg 57 425 message window indicator;
+#X msg 633 514 toggle float;
+#X msg 264 498 database limit;
+#X msg 606 393 float connection;
+#X msg 470 517 Context canvas;
+#X obj 238 26 cnv 15 352 62 empty empty empty 20 12 0 14 -99865 -66577
+0;
+#X obj 233 21 cnv 15 352 62 empty empty empty 20 12 0 14 -1 -66577
+0;
+#X obj 234 22 cnv 15 350 60 empty empty GUI interpretation 20 26 2
+38 -47022 -1 0;
+#X obj 613 28 ctxfiles/license;
+#X obj 613 6 declare -path ../;
+#X obj 71 23 docfiles/help-display \$0;
+#X text 96 197 The cursor   represents the    time position during
+playback. If the cursor is on the top of the Context canvas \, it means
+that the pattern and burst have been reversed., f 21;
+#X text 272 150 The number box displays the   cycle time in      seconds.
+, f 19;
+#X obj 433 186 else/openfile links/ID.html -h Context Manual section
+on ID;
+#X obj 228 207 else/openfile links/timing.html -h Context Manual section
+on timing;
+#X obj 59 323 else/openfile links/flipping_axes.html -h Context Manual
+section on flipping axes;
+#X obj 630 231 else/openfile links/gui_database.html -h Context Manual
+section on GUI database;
+#X text 646 165 This symbol atom displays and edits a single line from
+the message database., f 23;
+#X text 434 137 These represent a Context's unique ID number and tags.
+, f 19;
+#X obj 626 359 else/openfile links/pattern_and_burst.html -h Context
+Manual section on pattern and burst;
+#X text 635 299 These toggles fire simultaneously at the end of the
+Context cycle., f 23;
+#X obj 596 475 else/openfile links/float_connections.html -h Context
+Manual section on float-connections;
+#X text 606 415 A c-number in a pattern or burst toggle represents
+a connection. It refers to the Context ID number., f 28;
+#X text 629 539 A normal number in any toggle represents a number value
+which can be read by the = variable in the output language. This is
+useful for creating melodies., f 33;
+#X obj 420 583 else/openfile links/overlay.html -h Context Manual section
+on overlay;
+#X obj 546 618 else/openfile links/message_variables.html -h Context
+Manual section on variables without arguments;
+#X text 469 540 Special objects can be embedded in this area., f 17
+;
+#X obj 185 614 else/openfile links/database_limits.html -h Context
+Manual section on database limits;
+#X text 259 520 The off-coloured toggles indicate the position of the
+database limit \, ie. the position past which the database will not
+be read., f 26;
+#X obj 3 538 else/openfile links/gui_database.html -h Context Manual
+section on GUI database;
+#X text 54 447 Whenever the mouse hovers over Context \, one toggle
+turns black. This reveals the position of the message window in the
+message database., f 28;
+#X obj 288 440 else/openfile links/pattern_and_burst.html -h Context
+Manual section on pattern and burst;
+#X text 357 399 These toggles form a simple step-sequencer., f 15
+;
+#X connect 37 0 56 0;
+#X connect 38 0 58 0;
+#X connect 40 0 59 0;
+#X connect 41 0 55 0;
+#X connect 42 0 57 0;
+#X connect 43 0 54 0;
+#X connect 44 0 53 0;
+#X connect 49 0 47 0;
+#X connect 50 0 46 0;
+#X connect 51 0 45 0;
+#X connect 52 0 39 0;

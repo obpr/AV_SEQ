@@ -1,0 +1,15 @@
+#N canvas 55 75 450 300 10;
+#X obj 168 100 t f;
+#X msg 217 100 1;
+#X obj 168 55 inlet;
+#X obj 309 107 s \$1-printthese;
+#X obj 168 135 s \$1-printall;
+#X obj 262 136 s \$1-:pr;
+#X obj 168 78 route bang overlay float;
+#X connect 0 0 4 0;
+#X connect 1 0 4 0;
+#X connect 2 0 6 0;
+#X connect 6 0 0 0;
+#X connect 6 1 1 0;
+#X connect 6 2 5 0;
+#X connect 6 3 3 0;

@@ -1,0 +1,145 @@
+#N canvas 0 0 1680 1028 12;
+#X obj 101 101 cnv 15 232 53 empty empty empty 20 12 0 14 -1 -66577
+0;
+#X obj 20 -158 spigot-toggle_violet;
+#X obj -29 -158 spigot-toggle_violet;
+#X floatatom 142 -326 5 0 0 0 - - -;
+#X obj 102 -323 / 127;
+#X obj 175 -125 tgl 20 0 empty empty ☞ 2 9 0 45 -1 -260097 -260097
+0 1;
+#X floatatom 213 49 22 0 0 0 - - -;
+#X obj 213 24 snapshot~;
+#X floatatom 100 -128 5 0 0 0 speed - -;
+#X obj 106 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 102 -193 12 0 0 2 - - -;
+#X obj 102 -297 - 1;
+#X obj 102 -271 * -1;
+#X obj 11 22 r BBmod;
+#X obj 448 68 s stretchA;
+#X obj 102 -349 ctlin 52;
+#X msg 165 -30 0;
+#X obj 166 -55 r 0+;
+#X obj 138 105 tgl 20 0 empty empty A 7 10 1 10 -1 -260097 -262144
+0 1;
+#X obj 138 128 tgl 20 0 empty empty B 7 10 1 10 -1 -260097 -262144
+0 1;
+#X obj 164 128 bng 20 250 50 0 empty empty o 4 8 0 20 -1 -260097 -260097
+;
+#X obj 187 113 mknob 28 1000 -0.1 0.1 0 0 empty empty empty -2 -6 0
+8 -260097 -33289 -1 0 1;
+#X obj 164 107 mknob 20 1000 0 2 0 0 empty empty empty -2 -6 0 8 -1
+-260097 -260097 0 1;
+#X obj 384 110 t b f;
+#X obj 390 142 * 1;
+#X obj 102 -245 * 1;
+#X obj 102 -219 * 2;
+#X obj 100 -170 - 1;
+#X obj 106 60 spigot-toggle_violet;
+#X obj 219 102 vsl 28 48 0 1 0 0 empty empty empty 8 44 0 22 -16662
+-260097 -260097 0 1;
+#X msg 187 184 0;
+#X obj 109 113 bng 30 250 50 0 empty empty ☞ 5 15 0 35 -1 -260097
+-1;
+#X obj 123 159 r lo;
+#X msg 120 186 1;
+#X obj 220 -272 r reposetoinoffA;
+#X obj 332 -108 f;
+#X obj 417 -104 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 213 -1 phasor~;
+#X obj 24 -298 r B;
+#X obj 24 -266 * 2;
+#X obj 24 -234 - 1;
+#X obj 385 85 * 1;
+#X obj 24 -202 * 0.1;
+#X obj -23 -261 * 2;
+#X obj -23 -229 - 1;
+#X obj -23 -197 * 0.1;
+#X obj -23 -293 r A;
+#X obj 148 -152 * 0.1;
+#X obj 333 231 tgl 28 0 bonkdowntoenvA empty • 6 15 1 50 -1 -260097
+-260097 0 1;
+#X obj 333 205 tgl 28 0 bonkuptoenvA empty • 6 15 1 50 -1 -260097
+-260097 0 1;
+#X obj 291 -112 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 300 -77 f;
+#X obj 288 -139 sel;
+#X obj 213 -26 sig~ 1;
+#X msg 415 -75 0;
+#X obj 165 -3 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 11 51 spigot-toggle_violet;
+#X obj 214 -71 sel;
+#X obj 213 -97 r AAonoff;
+#X obj 220 -252 r reposetoinoffB;
+#X connect 1 0 8 0;
+#X connect 2 0 8 0;
+#X connect 4 0 11 0;
+#X connect 5 0 28 1;
+#X connect 5 0 52 0;
+#X connect 5 0 56 1;
+#X connect 6 0 14 0;
+#X connect 6 0 29 0;
+#X connect 7 0 6 0;
+#X connect 8 0 21 0;
+#X connect 9 0 28 0;
+#X connect 10 0 27 0;
+#X connect 11 0 12 0;
+#X connect 12 0 25 0;
+#X connect 13 0 56 0;
+#X connect 15 0 4 0;
+#X connect 15 1 3 0;
+#X connect 16 0 53 0;
+#X connect 16 0 37 1;
+#X connect 17 0 16 0;
+#X connect 17 0 55 0;
+#X connect 18 0 2 1;
+#X connect 19 0 1 1;
+#X connect 20 0 30 0;
+#X connect 21 0 41 0;
+#X connect 22 0 24 0;
+#X connect 23 0 24 0;
+#X connect 23 1 24 1;
+#X connect 24 0 35 1;
+#X connect 24 0 53 0;
+#X connect 25 0 26 0;
+#X connect 26 0 10 0;
+#X connect 27 0 47 0;
+#X connect 28 0 7 0;
+#X connect 28 0 31 0;
+#X connect 30 0 21 0;
+#X connect 32 0 33 0;
+#X connect 32 0 30 0;
+#X connect 32 0 56 1;
+#X connect 33 0 22 0;
+#X connect 34 0 5 0;
+#X connect 35 0 51 1;
+#X connect 36 0 54 0;
+#X connect 37 0 7 0;
+#X connect 38 0 39 0;
+#X connect 39 0 40 0;
+#X connect 40 0 42 0;
+#X connect 41 0 23 0;
+#X connect 42 0 1 0;
+#X connect 43 0 44 0;
+#X connect 44 0 45 0;
+#X connect 45 0 2 0;
+#X connect 46 0 43 0;
+#X connect 47 0 8 0;
+#X connect 50 0 51 0;
+#X connect 51 0 53 0;
+#X connect 52 0 36 0;
+#X connect 52 0 35 0;
+#X connect 52 1 50 0;
+#X connect 53 0 37 0;
+#X connect 54 0 7 0;
+#X connect 54 0 53 0;
+#X connect 55 0 7 0;
+#X connect 56 0 9 0;
+#X connect 57 0 16 0;
+#X connect 57 0 55 0;
+#X connect 58 0 57 0;
+#X connect 59 0 5 0;
+#X coords 0 -1 1 1 233 55 2 100 100;
